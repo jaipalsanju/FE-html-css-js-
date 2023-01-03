@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>templates</title>
+</head>
+<body>
+   <h3>Template strings and template variables</h3>
+<button id="showAnimalBtn">Show</button>
+<div id="template">
+  <!-- <ul>
+    <li>Cats</li>
+    <li>Dogs</li>
+    <li>Elephant</li>
+    <li>Monkey</li>
+  </ul> -->
+</div>
+<script>
+    let arr = ['Cat', 'Dog', 'Tiger', 'Eagle', 'Monkey', 'Lion', 'Elephant'];
+
+let showBtn= document.getElementById('showAnimalBtn');
+let divTemplate= document.getElementById('template');
+
+showBtn.addEventListener('click', showAnimals);
+
+function showAnimals(){
+  let li=``;
+  let ul=``;
+  
+  arr.forEach((ele)=>{
+    li = li +`<li>${ele}</li>`;
+    console.log(li);
+  });
+  console.log(li);
+  ul= ul + `<ul>${li}</ul>`;
+  console.log(ul);
+  divTemplate.innerHTML = ul;
+}
+</script>
+</body>
+</html>
