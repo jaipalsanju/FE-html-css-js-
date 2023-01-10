@@ -1,0 +1,65 @@
+h1{
+    color: rgb(30, 120, 210);
+    font-style: bold;
+    text-decoration:underline;
+    text-decoration-color:rgb(166, 255, 0);
+    
+}
+p{
+    color:rgb(218, 21, 145);
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#showemp{
+    background-color: darkred;
+    color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+#showemp:hover{
+    background-color: rgb(118, 54, 54);
+    border:8px;
+    transition-duration: 0.5;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.contain div{
+    width:250px;
+    height: 240px;
+    margin:2rem;
+    padding:2rem;
+    border-radius: 20px;
+    border:3px solid black;
+}
+
+.contain div:nth-child(2n){
+    background-color: aqua;
+}
+.contain div:nth-child(2n-1){
+    background-color: rgb(50, 236, 53);
+}
+
+.contain div>button{
+    background-color: rgb(25, 32, 174);
+    color: white;
+    align-items: center;
+    margin: 1rem;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    
+}
+
+.contain div>button:hover{
+    background-color: rgb(24, 76, 180);
+    transition: 0.4s;
+}
+
+
+
+
