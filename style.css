@@ -1,0 +1,112 @@
+#heading{
+    text-align: center;
+    height:10vh;
+    width:60vw;
+    background-color: grey;
+    border-radius: 15px;
+    padding-top: 18px;
+    margin-top: 2rem;
+    color:whitesmoke;
+    font-size: 20px;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#container{
+    height:30vh;
+    width:60vw;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    align-items: center;
+    border-radius: 3%;
+}
+.box{
+    width:45px;
+    height: 40px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border:2px solid rgb(112, 225, 20);
+    border-radius: 3px;
+}
+.one{
+    transition-delay: 0.2s;
+    transition-duration: 1.5s;
+}
+.one:hover{
+    cursor:pointer;
+    width:100px;
+    background-color: pink;
+    color: brown;
+    font-style: italic;
+}
+
+.two{
+    transition: all 0.4s ease-in;
+}
+.two:hover{
+    cursor: pointer;
+    height:125px;
+    width:150px;
+    border-radius: 50%;
+    background-color: blue;
+    background-image: url(https://i.ytimg.com/vi/xqajxYx62RM/maxresdefault.jpg);
+    background-size: cover;
+}
+.three{
+    transition: all 0.9s ease-in;
+}
+.three:hover{
+    cursor:pointer;
+    transform: rotate(45deg);
+    height:75px;
+    width:70px;
+    background-color:purple;
+
+}
+.four{
+    transition: all 0.7s ease-in;
+    position:sticky;
+}
+.four:hover{
+    cursor: pointer;
+    height: 110px;
+    width:120px;
+    background-color: rgb(92, 12, 23);
+    transform: translate(5px,40px);
+    border-radius: 8%;
+}
+.five{
+    transition: all 0.7s ease-in; 
+    
+}
+.five:hover{
+    cursor: pointer;
+    height:100px;
+    width:100px;
+    background-color: rgb(171, 252, 31);
+    color:rgb(212, 18, 83);
+    border-radius: 10%;
+    transform: scale(1.2);
+    transform: skew(15deg);
+}
+.six{
+    transition: all 0.7s ease-in; 
+}
+.six:hover{
+    cursor: pointer;
+    height: 140px;
+    width: 140px;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.b3LA3W7QTeSzo94h0PMOFAHaFj&pid=Api&rs=1&c=1&qlt=95&w=143&h=107);
+    background-size: cover;
+    transform: skew(-5deg);
+    border-radius: 5%;
+}
