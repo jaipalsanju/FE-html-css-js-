@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>subassignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="rating-cont">
+        <h2>Your Rating</h2>
+        <div id="star">
+            <span id="star1" class="rate" onclick="one()">★</span>
+            <span id="star2" class="rate" onclick="two()">★</span>
+            <span id="star3" class="rate" onclick="three()">★</span>
+            <span id="star4" class="rate" onclick="four()">★</span>
+            <span id="star5" class="rate" onclick="five()">★</span>
+        </div>
+        <p id="ratingresult"></p>
+    </div>
+    <br><br>
+    <div id="search-container">
+        <h2>Collapsable Search</h2>
+        <div id="collapsable">
+            <input style="display:none" type="text" id="search-bar" placeholder="search here...">
+            <button id="search-btn">&#x1F50E;&#xFE0E</button>
+        </div>
+    </div>
+    <br><br>
+    <h2>Ripple Effect</h2>
+    <div id="ripple">
+        <button id="ripple-btn">BooM</button>
+    </div>
+    <div id="popup-modal">
+        <h2>Popup-Modal</h2>
+        <button id="popup-btn" onclick="popupfn()">Click Here</button>
+        <div id="popupdisplay" style="display:none">Hello!! you are seeing a popup message now<br>
+            <button id="closing-btn" onclick="closefn()"><b>X</b></button></div>
+    </div>
+    <br><br><br><br><br>
+    <div id="loading-cont">
+        <h2>Loading-Box</h2>
+        <button id="load-btn" onclick="loadTxt()">Click</button>
+        <p id="resulttxt"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
