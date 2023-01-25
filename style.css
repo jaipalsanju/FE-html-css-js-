@@ -1,112 +1,125 @@
-#heading{
-    text-align: center;
-    height:10vh;
-    width:60vw;
-    background-color: grey;
-    border-radius: 15px;
-    padding-top: 18px;
-    margin-top: 2rem;
-    color:whitesmoke;
-    font-size: 20px;
-}
-body{
-    align-items: center;
-    justify-content: center;
+body {
     margin: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-}
-#container{
-    height:30vh;
-    width:60vw;
-    background-color: black;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
+    justify-content: center;
     align-items: center;
-    border-radius: 3%;
+    background-color: rgb(156, 228, 228);
 }
-.box{
-    width:45px;
-    height: 40px;
-    background-color: aqua;
+
+.rate {
+    font-size: 40px;
+}
+
+span {
+    transition: all 0.3s ease-in;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+#collapsable {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border:2px solid rgb(112, 225, 20);
+    justify-content: center;
+}
+
+#search-btn {
+    background-color: rgb(116, 17, 236);
+    color: white;
+    margin-left: 0.5rem;
     border-radius: 3px;
-}
-.one{
-    transition-delay: 0.2s;
-    transition-duration: 1.5s;
-}
-.one:hover{
-    cursor:pointer;
-    width:100px;
-    background-color: pink;
-    color: brown;
-    font-style: italic;
-}
-
-.two{
-    transition: all 0.4s ease-in;
-}
-.two:hover{
-    cursor: pointer;
-    height:125px;
-    width:150px;
-    border-radius: 50%;
-    background-color: blue;
-    background-image: url(https://i.ytimg.com/vi/xqajxYx62RM/maxresdefault.jpg);
-    background-size: cover;
-}
-.three{
-    transition: all 0.9s ease-in;
-}
-.three:hover{
-    cursor:pointer;
-    transform: rotate(45deg);
-    height:75px;
-    width:70px;
-    background-color:purple;
-
-}
-.four{
-    transition: all 0.7s ease-in;
-    position:sticky;
-}
-.four:hover{
-    cursor: pointer;
-    height: 110px;
-    width:120px;
-    background-color: rgb(92, 12, 23);
-    transform: translate(5px,40px);
-    border-radius: 8%;
-}
-.five{
-    transition: all 0.7s ease-in; 
+    height: 30px;
+    width:35px
     
 }
-.five:hover{
-    cursor: pointer;
-    height:100px;
-    width:100px;
-    background-color: rgb(171, 252, 31);
-    color:rgb(212, 18, 83);
-    border-radius: 10%;
-    transform: scale(1.2);
-    transform: skew(15deg);
+
+#search-bar {
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid black;
 }
-.six{
-    transition: all 0.7s ease-in; 
-}
-.six:hover{
+
+#ripple-btn {
+    height: 60px;
+    width:90px;
     cursor: pointer;
-    height: 140px;
-    width: 140px;
-    background-image: url(https://tse1.mm.bing.net/th?id=OIP.b3LA3W7QTeSzo94h0PMOFAHaFj&pid=Api&rs=1&c=1&qlt=95&w=143&h=107);
-    background-size: cover;
-    transform: skew(-5deg);
-    border-radius: 5%;
+    color: white;
+    margin: 1rem;
+    border: 2ps solid black;
+    border-radius: 50%;
+    padding: 1rem 1.5rem;
+    background-color: rgb(168, 68, 68);
+    font-size: 15px;
+    transition: 0.8s;
+    
+}
+
+#ripple-btn:focus {
+    background: rgb(168, 68, 68) radial-gradient(circle, transparent 1%, rgb(205, 78, 101)1%)center/15000%;
+}
+#ripple-btn:active{
+    background-color: rgb(72, 202, 75); 
+    background-size: 100%; 
+    transition: 0s;  
+}
+
+#popup-modal{
+    margin-top:1.5rem;
+}
+#popup-btn{
+    height: 30px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(85, 222, 202);
+    border:2px solid green;
+    border-radius: 3px;
+}
+#popup-btn:hover{
+    background-color: darkslategray;
+    color: aliceblue;
+    transition: all 0.8s ease;
+}
+#popupdisplay{
+    padding: 0.8rem;
+    width:10rem;
+    height: 5rem; 
+    background-color: rgb(53, 136, 219);
+    position: absolute;
+    margin-top:-3rem;
+    border-radius: 8px;
+    border:3px solid black
+    
+}
+
+#closing-btn{
+    background-color:red;
+    color:white;
+    border-radius: 4px ;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+#closing-btn:hover{
+    background-color: rgb(174, 117, 117);
+    transition: all 0.3s ease-in;
+}
+#load-btn{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    background-color: blueviolet;
+    color:white;
+    height:30px;
+    width:55px;
+    border-radius: 4px;
+}
+#resulttxt{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+#load-btn:hover{
+    background-color: rgb(11, 11, 99);
+    color:whitesmoke;
+    transition: all 0.3s ease-in
 }
